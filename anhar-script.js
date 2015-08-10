@@ -1,4 +1,4 @@
-/* javascript */
+/* javascript ~ anhar-script.js */
 var W = window, D = document;
 /* cursor always on top position */
 function onTop(ref,r){
