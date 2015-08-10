@@ -1,0 +1,32 @@
+# Panduan Bahasa Indonesia
+
+Anhar sangat mudah digunakan, yang pertama dilakukan adalah mengatur aplikasi apa saja yang akan dimasukan kedalam framework Anhar ini.
+
+Untuk masuk kedalam laman Pengaturan, klik tanda # (pagar) dikanan atas layar, kemudian akan muncul menu, diantaranya adalah: Beranda, Pengaturan dan Tentang. Daftar menu akan bertambah bila ada aplikasi yang menyertai menambahkan menu untuk aplikasi itu sendiri.
+
++ Beranda adalah tempat berkumpulnya semua aplikasi yang berada dalam direktori dimana anhar.html berada
++ Pengaturan adalah tempat untuk mengatur aplikasi dan juga bahasa, pengaturan akan bertambah bila ada aplikasi yang menambahkannya
+  + Mengatur bahasa
+    + Pengaturan bahasa tergantung pada kapasitas framework itu sendiri
+    + Untuk seting awal adalah "en" dan untuk bahasa indonesia "id"
+  + Bagaimana menampilkan aplikasi yang sudah terinstal?
+    + Tulis "namespace" pada baris Aplikasi dan pisahkan dengan koma
+    + Contoh: quran1,quran2,quran3id,quran3en
++ Tentang adalah informasi tentang framework Anhar
+
+
+# Mengistal Aplikasi
+
+Beberapa aplikasi sudah disediakan sebagai contoh dalam bentuk alpha. Berikut cara pengintalan aplikasi: 
++ Setiap aplikasi diharuskan mempunyai file minimal 3 file, diantaranya: 
+  + *.json -> untuk informasi aplikasi tersebut yang berisi: 
+    + namespace
+    + name
+    + description
+    + version
+    + icon64
+  + *.js -> yang harus sesuai dengan namespace aplikasi tersebut
+  + *.png -> harus sesuai dengan value icon64 dan beresolusi 64x64 pixel
++ Beberapa aplikasi mempunyai file tambahan atau extension, tambahkan file-file ini bila perlu
++ Setelah di-copy seluruh file-require diatas, lalu tampilkan dengan cara yang sudah dijelaskan pada sesi pengaturan diatas.
+
