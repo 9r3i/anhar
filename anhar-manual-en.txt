@@ -1,0 +1,32 @@
+# English Manual
+
+Anhar is very simple to use, the first thing to do is setup the applications which want to show in this Anhar framework.
+
+To show the Settings page, simply click the # (sharf) sign on the right-top of the screen, then the menu will be appeared, including: Home, Settings and About. The menu list will be added as some applications create the list as well for their selves.
+
++ Home is the place for all applications complied in the directory where anhar.html is
++ Settings is the place to setup the applications and language, settings will be added as some applications added to.
+  + Set the language
+    + The languages or the locales are only available as the framework complied them
+    + For default set is "en" also indonesian as "id"
+  + How to show the installed applications?
+    + Write "namespace" of each application in the applications line, saperated by comma.
+    + Example: quran1,quran2,quran3id,quran3en
++ About is the place of the information of Anhar framework
+
+
+# Install an Application
+
+A few of applications have been available as sample in formed of alpha. Here are the way to install an application: 
++ Every application has to have 3 files each minimum, and they are:
+  + *.json -> for the information of the application:
+    + namespace
+    + name
+    + description
+    + version
+    + icon64
+  + *.js -> must be the same as its namespace
+  + *.png -> must be the same as its value and has 64x64 pixel resolution
++ Some of applications have an extension files, then add the extension to the directory
++ After copied the whole require files, you has to show them as the way to show the appllications in Settings session above.
+
