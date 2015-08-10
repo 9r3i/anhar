@@ -9,7 +9,7 @@ function onTop(ref,r){
       W.location.assign('#'+ref);
       var currentY = window.pageYOffset;
       W.scroll(0,currentY-60);
-    },500);
+    },1500);
   }else{
     W.scroll(0,0);
   }
