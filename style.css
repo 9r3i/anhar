@@ -1,0 +1,240 @@
+/* cascade style sheet ~ style.css */
+body,table,select,input,textarea,button{font-family:consolas,monospace;font-size:small;color:#333;}
+a{text-decoration:none;color:#37b;}a:hover{color:#7b3;}
+body{background-color:#fff;margin:0px;padding:0px;overflow-x:hidden;}
+#index{
+  margin:0px;
+  padding:0px;
+  color:#333;
+  background-color:transparent;
+}
+#header{
+  margin:0px;
+  padding:3px;
+  background-color:#9bf;
+  background:-moz-linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  background:-webkit-linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  background:-o-linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  background:-ms-linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  background:linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  color:#fff;
+  text-shadow:1px -1px 1px #333;
+  font-family:Traditional Arabic;
+  font-size:large;
+  direction:rtl;
+  text-align:center;
+  font-weight:bold;
+  position:fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  width:100%;
+  z-index:10;
+  box-shadow:0px 3px 10px #333;
+}
+#header:before{content:"\0623\064e\0646\0652\0647\064e\0627\0631";}
+#header:after{content:"";}
+#footer{
+  margin:0px;
+  padding:5px;
+  background-color:#9bf;
+  background:-moz-linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  background:-webkit-linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  background:-o-linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  background:-ms-linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  background:linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  color:#fff;
+  text-shadow:1px -1px 1px #333;
+  text-align:center;
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  width:100%;
+  z-index:10;
+  box-shadow:0px -3px 10px #333;
+}
+#footer:before{content:"";}
+#footer a{text-decoration:none;color:#fff;}
+#rmenu{
+  display:inline-block;
+  position:fixed;
+  top:5px;
+  right:15px;
+  cursor:pointer;
+  margin:0px;
+  text-align:center;
+  z-index:11;
+  font-size:large;
+  color:#fff;
+  text-shadow:1px -1px 1px #333;
+  font-family:Consolas;
+}
+#rmenu:hover{
+  color:#333;
+  text-shadow:1px -1px 1px #fff;
+}
+#rmenu:before{content:"#";}
+#menu{
+  display:none;
+  position:fixed;
+  background-color:#fff;
+  margin:0px;
+  padding:10px 0px 0px;
+  top:33px;
+  right:0px;
+  bottom:25px;
+  width:100%;
+  overflow-y:auto;
+  overflow-x:hidden;
+  z-index:9;
+}
+.menu-each-top{
+  margin:0px;
+  padding:0px;
+  border-bottom:1px solid #bbb;
+}
+.menu-each{
+  background-color:#fff;
+  margin:0px;
+  padding:15px 10px;
+  font-size:medium;
+  color:#333;
+  border-bottom:1px solid #bbb;
+}
+.menu-each:hover{background-color:#bdf;}
+#loading{
+  color:#777;
+  margin:0px;
+  padding:20px 5px;
+  text-align:center;
+  font-weight:bold;
+  font-size:27px;
+}
+#loading .keyword{
+  color:#7b3;
+}
+#loading:before{content:"Loading...";}
+#body{margin:33px auto 25px;padding:0px;background-color:transparent;}
+#content{
+  margin:0px;
+  padding:0px;
+  background-color:transparent;
+  min-height:200px;
+}
+#content h1,#content h2,#content h3{
+  color:#555;
+  margin:0px;
+  padding:0px;
+}
+.title{
+  margin:0px;
+  padding:20px 10px 10px;
+  font-weight:bold;
+  color:#555;
+  font-size:large;
+}
+.content{
+  padding:10px;
+  margin:0x;
+}
+.app-list{
+  padding:10px 2px 5px;
+  margin:0px;
+}
+.app-each{
+  width:64px;
+  height:64px;
+  display:inline-block;
+  padding:0px;
+  margin:5px;
+  border:0px none;
+  overflow:hidden;
+}
+.app-each img{
+  width:64px;
+  height:64px;
+  border:0px none;
+  
+}
+/* --- search form --- */
+.form{
+  margin:0px;
+  padding:10px;
+}
+.form table{
+  width:100%;
+}
+.form td{width:50%;}
+.divinput{
+  margin:0px;
+  padding:0px 20px 0px 0px;
+}
+.divsubmit{
+  margin:10px;
+}
+.input{
+  margin:0px;
+  padding:10px;
+  width:100%;
+  border:1px solid #bbb;
+  box-shadow:0px 0px 5px #333;
+}
+.input:focus{
+  box-shadow:0px 0px 7px #7b3;
+}
+.submit{
+  width:100%;
+  margin:0px;
+  padding:9px;
+  background-color:#9bf;
+  background:-moz-linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  background:-webkit-linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  background:-o-linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  background:-ms-linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  background:linear-gradient(center top,#9bf 20%,#59d 100%) repeat scroll 0% 0% transparent;
+  color:#fff;
+  text-shadow:1px -1px 1px #333;
+  border:0px none;
+  box-shadow:0px 0px 5px #333;
+}
+.submit:hover{
+  background:-moz-linear-gradient(center top,#79d 20%,#37b 100%) repeat scroll 0% 0% transparent;
+  background:-webkit-linear-gradient(center top,#79d 20%,#37b 100%) repeat scroll 0% 0% transparent;
+  background:-o-linear-gradient(center top,#79d 20%,#37b 100%) repeat scroll 0% 0% transparent;
+  background:-ms-linear-gradient(center top,#79d 20%,#37b 100%) repeat scroll 0% 0% transparent;
+  background:linear-gradient(center top,#79d 20%,#37b 100%) repeat scroll 0% 0% transparent;
+}
+.submit:focus{
+  background:-moz-linear-gradient(center top,#59d 20%,#9bf 100%) repeat scroll 0% 0% transparent;
+  background:-webkit-linear-gradient(center top,#59d 20%,#9bf 100%) repeat scroll 0% 0% transparent;
+  background:-o-linear-gradient(center top,#59d 20%,#9bf 100%) repeat scroll 0% 0% transparent;
+  background:-ms-linear-gradient(center top,#59d 20%,#9bf 100%) repeat scroll 0% 0% transparent;
+  background:linear-gradient(center top,#59d 20%,#9bf 100%) repeat scroll 0% 0% transparent;
+}
+.setting-check{
+  width:20px;
+  height:20px;
+  background-color:#9bf;
+  border:7px solid #bdf;
+  border-radius:20px;
+  cursor:default;
+  text-align:center;
+  color:#fff;
+}
+.setting-check:after{
+  content:"OFF";
+}
+.setting-checked{
+  width:20px;
+  height:20px;
+  background-color:#7b3;
+  border:7px solid #bdf;
+  border-radius:20px;
+  cursor:default;
+  text-align:center;
+  color:#fff;
+}
+.setting-checked:after{content:"ON";}
+
+
