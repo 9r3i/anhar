@@ -1,4 +1,7 @@
-/* anhar.js */
+/* anhar.js 
+ * authored by 9r3i
+ * github.com/9r3i
+ */
 var ANHAR, SETTING, APPS, SESSION, D, W;
 
 /* get all setting from cookie and re-set to cookie */
@@ -47,6 +50,10 @@ function set_app(ns){
 function load_app(){
   if(SESSION){
     require(SESSION+'.js');
+    post(SESSION+'.json',function(res){
+      var doc = JSON.parse(res);
+      if(doc){gebtn('title')[0].innerHTML = doc.name+' &#8213; '+ANHAR.arabic_name;}
+    });
   }
 }
 /* close app */
