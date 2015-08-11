@@ -1,0 +1,45 @@
+{
+  "namespace":"anhar",
+  "name":"Anhar",
+  "arabic_name":"\u0623\u064e\u0646\u0652\u0647\u064e\u0627\u0631",
+  "description":"HTML Applications Framework",
+  "about":{
+    "en":"Version 1.0<br \/><br \/>Anhar is the framework for HTML applications or application based on HTML. Supported by CSS and Javascript, make anhar possibly load more applications in one file.<br \/>Then  the Cookie usage as the storage of settings and temporary data. So that, very recommended to activate the cookie at the Browser as this Anhar framework is running.<br \/><br \/>Simple but useful enough, because the purpose of development by creating the framework of Anhar is only for Islam.<br \/><br \/>Please check the latest update code of Anhar in GitHub: <a href=\"https:\/\/github.com\/9r3i\/anhar\">https:\/\/github.com\/9r3i\/anhar<\/a><br \/><br \/>--<a href=\"https:\/\/github.com\/9r3i\">9r3i<\/a> (Developer)",
+    "id":"Versi 1.0<br \/><br \/>Anhar adalah framework untuk aplikasi HTML atau yang berbasis HTML. Didukung dengan CSS dan Javascript, memungkinkan Anhar untuk dapat memuat beberapa aplikasi dalam satu file.<br \/>Kemudian penggunaan Cookie sebagai tempat penyimpanan pengaturan dan data sementara. Oleh karena itu, disarankan untuk mengaktifkan cookie pada Browser disaat menjalankan framework Anhar ini.<br \/><br \/>Sederhana namun cukup bermanfaat, karena tujuan pengembang dalam membuat framework ini adalah untuk Islam.<br \/><br \/>Silahkan periksa kode terbaru Anhar di GitHub: <a href=\"https:\/\/github.com\/9r3i\/anhar\">https:\/\/github.com\/9r3i\/anhar<\/a><br \/><br \/>--<a href=\"https:\/\/github.com\/9r3i\">9r3i<\/a> (Pengembang)"
+  },
+  "menu":[
+    {"href":"javascript:load_list()","title":"Home","name":"Home"},
+    {"href":"javascript:load_manual()","title":"Manual","name":"Manual"},
+    {"href":"javascript:load_setting()","title":"Settings","name":"Settings"},
+    {"href":"javascript:load_about()","title":"About","name":"About"}
+  ],
+  "setting":[
+    {"label":"Language","name":"locale","id":"locale","value":"id"},
+    {"label":"Application","name":"apps","id":"apps","value":"quran3id"},
+    {"label":"Background Image","name":"bg_image","id":"bg_image","value":""}
+  ],
+  "set":{
+    "locale":"id",
+    "apps":"quran3id",
+    "bg_image":""
+  },
+  "apps":{},
+  "locale":{
+    "en":{
+      "Powered by":"Powered by"
+    },
+    "id":{
+      "Background Image":"Gambar Latar",
+      "Manual":"Panduan",
+      "Close Application":"Tutup Aplikasi",
+      "Application":"Aplikasi",
+      "Home":"Beranda",
+      "Settings are saved":"Pengaturan telah disimpan",
+      "Language":"Bahasa",
+      "Save":"Simpan",
+      "Settings":"Pengaturan",
+      "About":"Tentang",
+      "Powered by":"Diberdayakan oleh"
+    }
+  }
+}

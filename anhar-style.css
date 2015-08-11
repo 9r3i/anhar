@@ -4,7 +4,15 @@
  */
 body,table,select,input,textarea,button{font-family:consolas,monospace;font-size:small;color:#333;}
 a{text-decoration:none;color:#37b;}a:hover{color:#7b3;}
-body{background-color:#fff;margin:0px;padding:0px;overflow-x:hidden;}
+body{
+  background-color:#fff;
+  margin:0px;
+  padding:0px;
+  overflow-x:hidden;
+  background-position:center center;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+}
 #index{
   margin:0px;
   padding:0px;
@@ -147,13 +155,22 @@ body{background-color:#fff;margin:0px;padding:0px;overflow-x:hidden;}
   font-weight:bold;
   color:#555;
   font-size:large;
+  background-color:#fff;
 }
 .content{
   padding:10px;
+  margin:0px;
+  background-color:#fff;
+}
+.content-manual{
+  padding:10px;
   margin:0x;
+  white-space:pre-wrap;
+  word-break:break-all;
+  background-color:#fff;
 }
 .app-list{
-  padding:10px 2px 5px;
+  padding:10px 12px 10px;
   margin:0px;
 }
 .app-each{
@@ -175,6 +192,7 @@ body{background-color:#fff;margin:0px;padding:0px;overflow-x:hidden;}
 .form{
   margin:0px;
   padding:10px;
+  background-color:#fff;
 }
 .form table{
   width:100%;

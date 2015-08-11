@@ -2,6 +2,7 @@
  * authored by 9r3i
  * github.com/9r3i
  */
+/* get all global variables */
 var ANHAR, SETTING, APPS, SESSION, D, W;
 
 /* get all setting from cookie and re-set to cookie */
@@ -9,6 +10,10 @@ for(var i in ANHAR.set){
   var c = getCookie(i);
   SETTING[i] = c?c:ANHAR.set[i];
   setCookie(i,SETTING[i],31);
+}
+/* set background image */
+if(D.body){
+  D.body.style.backgroundImage = "url('"+SETTING.bg_image+"')";
 }
 /* set the APPS array */
 APPS = SETTING.apps?SETTING.apps.split(','):[];
@@ -21,12 +26,22 @@ if(SESSION){
 }else{
   gebtn('body')[0].setAttribute('onload','load_list();load_menu();');
 }
-
+/* load manual */
+function load_manual(){
+  var c = gebi('content');
+  gebi('menu').style.display = 'none';
+  onTop('manual');
+  post('anhar-manual-'+SETTING.locale+'.txt',function(res){
+    if(res){
+      c.innerHTML = '<div class="title">'+locale('Manual')+'</div><div class="content-manual">'+res+'</div>';
+    }
+  });
+}
 /* load app list */
 function load_list(){
   if(!APPS){return;}
   var c = gebi('content');
-  c.innerHTML = '<div class="content"><div class="app-list" id="anhar_app_list"></div></div>';
+  c.innerHTML = '<div class="app-list" id="anhar_app_list"></div>';
   for(var i in APPS){
     post(APPS[i]+'.json',function(res){
       var doc = res?JSON.parse(res):{"namespace":"","name":"","description":"","version":"","icon64":""};
@@ -117,7 +132,13 @@ function load_menu(){
   c.innerHTML = '<div class="menu-each-top"></div>';
   for(var i in ANHAR.menu){
     var menu = ANHAR.menu[i];
-    c.innerHTML += '<a href="'+menu.href+'" title="'+locale(menu.title)+'"><div class="menu-each">'+locale(menu.name)+'</div></a>';
+    if(menu.name=='Home'){
+      if(!SESSION){
+        c.innerHTML += '<a href="'+menu.href+'" title="'+locale(menu.title)+'"><div class="menu-each">'+locale(menu.name)+'</div></a>';
+      }
+    }else{
+      c.innerHTML += '<a href="'+menu.href+'" title="'+locale(menu.title)+'"><div class="menu-each">'+locale(menu.name)+'</div></a>';
+    }
   }
   if(SESSION){
     c.innerHTML += '<a href="javascript:close_app()" title="'+locale('Close Application')+'"><div class="menu-each">'+locale('Close Application')+'</div></a>';
