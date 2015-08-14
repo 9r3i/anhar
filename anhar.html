@@ -37,16 +37,19 @@ var ANHAR = {
   },
   "menu":[
     {"href":"javascript:load_list()","title":"Home","name":"Home"},
+    {"href":"javascript:load_manual()","title":"Manual","name":"Manual"},
     {"href":"javascript:load_setting()","title":"Settings","name":"Settings"},
     {"href":"javascript:load_about()","title":"About","name":"About"}
   ],
   "setting":[
-    {"label":"Language","name":"locale","id":"locale","value":"en"},
-    {"label":"Application","name":"apps","id":"apps","value":""}
+    {"label":"Language","name":"locale","id":"locale","value":"id"},
+    {"label":"Application","name":"apps","id":"apps","value":"quran3id"},
+    {"label":"Background Image","name":"bg_image","id":"bg_image","value":""}
   ],
   "set":{
-    "locale":"en",
-    "apps":""
+    "locale":"id",
+    "apps":"quran3id",
+    "bg_image":""
   },
   "apps":{},
   "locale":{
@@ -54,6 +57,8 @@ var ANHAR = {
       "Powered by":"Powered by"
     },
     "id":{
+      "Background Image":"Gambar Latar",
+      "Manual":"Panduan",
       "Close Application":"Tutup Aplikasi",
       "Application":"Aplikasi",
       "Home":"Beranda",
