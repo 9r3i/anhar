@@ -1,5 +1,5 @@
 /* quran3.js */
-var Q3PNG = 'quran3db/';
+var Q3PNG = 'https://raw.githubusercontent.com/9r3i/anhar/master/quran3db/';
 /* add menu */
 ANHAR.menu.push({"href":"javascript:quran3_load_search_form()","title":"Cari kata dalam Quran","name":"Cari kata dalam Quran"});
 ANHAR.menu.push({"href":"javascript:quran3_load_about()","title":"Tentang Aplikasi Quran","name":"Tentang Aplikasi Quran"});
