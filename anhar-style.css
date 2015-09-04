@@ -122,7 +122,7 @@ body{
   font-weight:bold;
   font-size:20px;
   background-color:#fff;
-  background-image:url('anhar-loader.gif');
+  background-image:url('https://raw.githubusercontent.com/9r3i/anhar/master/anhar-loader.gif');
   background-repeat:no-repeat;
   background-position:center 50px;
   opacity:0.9;
